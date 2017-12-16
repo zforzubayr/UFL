@@ -2,7 +2,6 @@ package com.vlogellaa.espresso.ufl.ui.fragments.bottom_nav;
 
 
 import android.os.Bundle;
-import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
@@ -26,9 +25,7 @@ public class FixtureFragment extends Fragment {
     @BindView(R.id.view_pager)
     ViewPager viewPager;
 
-    public FixtureFragment() {
-        // Required empty public constructor
-    }
+    public FixtureFragment() {}
 
 
     @Override
@@ -38,6 +35,14 @@ public class FixtureFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_fixture, container, false);
         ButterKnife.bind(this, view);
 
+        this.setTabLayout();
+        this.setPageAdapter();
+        this.listenersForTabLayout();
+
+        return view;
+    }
+
+    private void setTabLayout(){
         tabLayout.setSmoothScrollingEnabled(true);
         tabLayout.setScrollPosition(3, 0f, true);
 
@@ -48,19 +53,20 @@ public class FixtureFragment extends Fragment {
         tabLayout.addTab(tabLayout.newTab().setText("Saudi League").setIcon(R.drawable.saudi_contest));
         tabLayout.addTab(tabLayout.newTab().setText("La Liga").setIcon(R.drawable.spain_contest));
         tabLayout.setTabGravity(TabLayout.MODE_FIXED);
+    }
 
 
-
-
+    private void setPageAdapter(){
         PagerAdapter adapter = new PagerAdapter(
                 getActivity().getSupportFragmentManager(),
                 tabLayout.getTabCount()
         );
 
         viewPager.setAdapter(adapter);
+    }
 
 
-
+    private void listenersForTabLayout(){
         tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
@@ -77,12 +83,6 @@ public class FixtureFragment extends Fragment {
 
             }
         });
-
-
-
-
-
-        return view;
     }
 
 }
