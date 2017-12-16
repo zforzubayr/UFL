@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/points"
+        android:icon="@drawable/ufl_logo"
+        android:title="@string/points_template" />
+
+    <item
+        android:id="@+id/contests"
+        android:icon="@drawable/contest_icon"
+        android:title="@string/contests" />
+
+    <item
+        android:id="@+id/fixtures"
+        android:icon="@drawable/fixture"
+        android:title="@string/fixtures" />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/account"
+        android:title="@string/profile" />
+
+    <item
+        android:id="@+id/gam"
+        android:icon="@drawable/gam"
+        android:title="@string/gam" />
+
+</menu>
