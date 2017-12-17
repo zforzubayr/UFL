@@ -12,16 +12,14 @@ import com.vlogellaa.espresso.ufl.R;
 public class PremierFragment extends Fragment {
 
 
-    public PremierFragment() {
-        // Required empty public constructor
-    }
+    public PremierFragment() {}
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_premier, container, false);
+        View view = inflater.inflate(R.layout.fragment_premier, container, false);
+        return view;
     }
 
 }
