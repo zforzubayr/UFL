@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,8 +23,8 @@ public class FixtureFragment extends Fragment {
     @BindView(R.id.tab_layout)
     TabLayout tabLayout;
 
-    @BindView(R.id.view_pager)
-    ViewPager viewPager;
+    @BindView(R.id.recycler_view)
+    RecyclerView recyclerView;
 
     public FixtureFragment() {}
 
@@ -36,7 +37,7 @@ public class FixtureFragment extends Fragment {
         ButterKnife.bind(this, view);
 
         this.setTabLayout();
-        this.setPageAdapter();
+//        this.setPageAdapter();
         this.listenersForTabLayout();
 
         return view;
@@ -62,7 +63,7 @@ public class FixtureFragment extends Fragment {
                 tabLayout.getTabCount()
         );
 
-        viewPager.setAdapter(adapter);
+//        viewPager.setAdapter(adapter);
     }
 
 
@@ -70,7 +71,7 @@ public class FixtureFragment extends Fragment {
         tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-                viewPager.setCurrentItem(tab.getPosition());
+//                viewPager.setCurrentItem(tab.getPosition());
             }
 
             @Override
