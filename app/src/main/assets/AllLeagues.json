@@ -1,0 +1,302 @@
+[
+  {
+    "type": "date",
+    "value": "Today"
+  },
+  {
+    "type": "game",
+    "filter_type": "Series A",
+    "time":"03:40",
+    "team_one": "Argentina",
+    "team_two": "Brazil"
+  },
+  {
+    "type": "game",
+    "filter_type": "Premier League",
+    "time":"11:00",
+    "team_one": "Manchester United",
+    "team_two": "Yorkshire"
+  },
+  {
+    "type": "game",
+    "filter_type": "Ligui 1",
+    "time":"18:20",
+    "team_one": "Morkel One",
+    "team_two": "Jiberish Fork"
+  },
+  {
+    "type": "game",
+    "filter_type": "La Liga",
+    "time":"22:00",
+    "team_one": "Marfo Gain",
+    "team_two": "Rob For"
+  },
+  {
+    "type": "game",
+    "filter_type": "Saudi League",
+    "time":"00:45",
+    "team_one": "Arsenal",
+    "team_two": "Liverpool"
+  },
+
+
+
+
+
+  {
+    "type": "date",
+    "value": "Wednesday December 20"
+  },
+  {
+    "type": "game",
+    "filter_type": "Saudi League",
+    "time":"23:40",
+    "team_one": "Aeo Korbo",
+    "team_two": "Bark Santiago "
+  },
+  {
+    "type": "game",
+    "filter_type": "Premier League",
+    "time":"00:34",
+    "team_one": "Morgan Works",
+    "team_two": "Jack Rotten"
+  },
+  {
+    "type": "game",
+    "filter_type": "La Liga",
+    "time":"09:35",
+    "team_one": "Main Men",
+    "team_two": "Steelers"
+  },
+  {
+    "type": "game",
+    "filter_type": "Series A",
+    "time":"08:24",
+    "team_one": "Gradle",
+    "team_two": "Pro Guard"
+  },
+  {
+    "type": "game",
+    "filter_type": "Ligui 1",
+    "time":"23:25",
+    "team_one": "App",
+    "team_two": "Project"
+  },
+
+
+
+
+  {
+    "type": "date",
+    "value": "Thursday December 21"
+  },
+  {
+    "type": "game",
+    "filter_type": "Series A",
+    "time":"09:20",
+    "team_one": "Main",
+    "team_two": "Com"
+  },
+  {
+    "type": "game",
+    "filter_type": "Saudi League",
+    "time":"11:35",
+    "team_one": "Go",
+    "team_two": "Pro"
+  },
+  {
+    "type": "game",
+    "filter_type": "Premier League",
+    "time":"01:25",
+    "team_one": "Local Heroes",
+    "team_two": "Date League"
+  },
+  {
+    "type": "game",
+    "filter_type": "La Liga",
+    "time":"13:30",
+    "team_one": "Barcelona",
+    "team_two": "Catalunya"
+  },
+  {
+    "type": "game",
+    "filter_type": "Ligui 1",
+    "time":"09:30",
+    "team_one": "San Antoni0",
+    "team_two": "San Andreas"
+  },
+
+
+
+
+  {
+    "type": "date",
+    "value": "Friday December 22"
+  },
+  {
+    "type": "game",
+    "filter_type": "Ligui 1",
+    "time":"09:20",
+    "team_one": "Mugello",
+    "team_two": "Jerez"
+  },
+  {
+    "type": "game",
+    "filter_type": "Premier League",
+    "time":"15:20",
+    "team_one": "Portugal",
+    "team_two": "United Kingdom"
+  },
+  {
+    "type": "game",
+    "filter_type": "Series A",
+    "time":"20:00",
+    "team_one": "Boulder",
+    "team_two": "Wolves"
+  },
+  {
+    "type": "game",
+    "filter_type": "Saudi League",
+    "time":"10:15",
+    "team_one": "Riyadh",
+    "team_two": "Tayef"
+  },
+  {
+    "type": "game",
+    "filter_type": "La Liga",
+    "time":"17:30",
+    "team_one": "Austin",
+    "team_two": "Laguna Seca"
+  },
+
+
+
+
+  {
+    "type": "date",
+    "value": "Saturday December 23"
+  },
+  {
+    "type": "game",
+    "filter_type": "Series A",
+    "time":"18:00",
+    "team_one": "Belgium",
+    "team_two": "Russia"
+  },
+  {
+    "type": "game",
+    "filter_type": "Ligui 1",
+    "time":"21:20",
+    "team_one": "Japan",
+    "team_two": "Montana"
+  },
+  {
+    "type": "game",
+    "filter_type": "Premier League",
+    "time":"00;30",
+    "team_one": "North Dakota",
+    "team_two": "South Dakota"
+  },
+  {
+    "type": "game",
+    "filter_type": "Saudi League",
+    "time":"01:30",
+    "team_one": "California",
+    "team_two": "New York"
+  },
+  {
+    "type": "game",
+    "filter_type": "La Liga",
+    "time":"04:30",
+    "team_one": "New Jersey",
+    "team_two": "New Mexico"
+  },
+
+
+
+  {
+    "type": "date",
+    "value": "Sunday December 24"
+  },
+  {
+    "type": "game",
+    "filter_type": "Ligui 1",
+    "time":"05:00",
+    "team_one": "Nexus",
+    "team_two": "Burma"
+  },
+  {
+    "type": "game",
+    "filter_type": "Series A",
+    "time":"09:30",
+    "team_one": "Finland",
+    "team_two": "Norway"
+  },
+  {
+    "type": "game",
+    "filter_type": "Premier League",
+    "time":"06:00",
+    "team_one": "Canada",
+    "team_two": "Houston"
+  },
+  {
+    "type": "game",
+    "filter_type": "Saudi League",
+    "time":"11:00",
+    "team_one": "Battery",
+    "team_two": "Central"
+  },
+  {
+    "type": "game",
+    "filter_type": "La Liga",
+    "time":"13:00",
+    "team_one": "Delaware",
+    "team_two": "PA"
+  },
+
+
+
+
+
+
+  {
+    "type": "date",
+    "value": "Monday December 25"
+  },
+  {
+    "type": "game",
+    "filter_type": "Series A",
+    "time":"23:00",
+    "team_one": "Brazil",
+    "team_two": "Iran"
+  },
+  {
+    "type": "game",
+    "filter_type": "Ligui 1",
+    "time":"20:00",
+    "team_one": "Ireland",
+    "team_two": "Jordan"
+  },
+  {
+    "type": "game",
+    "filter_type": "Saudi League",
+    "time":"12:00",
+    "team_one": "Qatar",
+    "team_two": "Bahrain"
+  },
+  {
+    "type": "game",
+    "filter_type": "Premier League",
+    "time":"09:00",
+    "team_one": "Australia",
+    "team_two": "New Zealand"
+  },
+  {
+    "type": "game",
+    "filter_type": "La Liga",
+    "time":"00:12",
+    "team_one": "Italy",
+    "team_two": "France"
+  }
+
+]
