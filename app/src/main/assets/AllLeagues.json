@@ -33,6 +33,13 @@
   },
   {
     "type": "game",
+    "filter_type": "Premier League",
+    "time":"18:20",
+    "team_one": "Fork Three",
+    "team_two": "Jish Morker"
+  },
+  {
+    "type": "game",
     "filter_type": "Saudi League",
     "time":"00:45",
     "team_one": "Arsenal",
@@ -77,6 +84,13 @@
   },
   {
     "type": "game",
+    "filter_type": "Saudi League",
+    "time":"19:35",
+    "team_one": "PA Men",
+    "team_two": "Brawlers"
+  },
+  {
+    "type": "game",
     "filter_type": "Ligui 1",
     "time":"23:25",
     "team_one": "App",
@@ -117,6 +131,13 @@
     "time":"13:30",
     "team_one": "Barcelona",
     "team_two": "Catalunya"
+  },
+  {
+    "type": "game",
+    "filter_type": "Series A",
+    "time":"20:20",
+    "team_one": "Maine",
+    "team_two": "California"
   },
   {
     "type": "game",
@@ -182,6 +203,13 @@
     "time":"18:00",
     "team_one": "Belgium",
     "team_two": "Russia"
+  },
+  {
+    "type": "game",
+    "filter_type": "La Liga",
+    "time":"04:30",
+    "team_one": "New Park",
+    "team_two": "Market Mexico"
   },
   {
     "type": "game",
