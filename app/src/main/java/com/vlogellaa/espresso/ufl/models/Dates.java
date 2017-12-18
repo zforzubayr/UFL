@@ -15,6 +15,10 @@ public class Dates {
         games = setGames();
     }
 
+    public String getDate() {
+        return date;
+    }
+
     public List<Game> getGames() {
         return games;
     }
