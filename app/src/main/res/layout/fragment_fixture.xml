@@ -22,7 +22,6 @@
             app:contentScrim="?attr/colorPrimary"
             app:expandedTitleMarginStart="40dp"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
-            <!--app:layout_scrollFlags="scroll|exitUntilCollapsed" the title just stays as toolbar-->
 
             <android.support.constraint.ConstraintLayout
                 android:id="@+id/song_details_constraint_layout"
@@ -43,9 +42,6 @@
                     app:tabTextColor="#eff0fa" />
 
             </android.support.constraint.ConstraintLayout>
-
-
-            <!--app:tabSelectedTextColor="#a9afff"-->
 
 
         </android.support.design.widget.CollapsingToolbarLayout>
