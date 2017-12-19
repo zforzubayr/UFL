@@ -24,6 +24,20 @@ public class RecycleAdapter  extends RecyclerView.Adapter<RecyclerView.ViewHolde
         this.content = content;
     }
 
+
+    @Override
+    public int getItemViewType(int position) {
+        if (content != null && content.size() > 0) {
+            if (content.get(position) instanceof Dates) {
+                return DATE;
+            } else if (content.get(position) instanceof Game) {
+                return GAME;
+            }
+
+        }
+        return -1;
+    }
+
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         RecyclerView.ViewHolder viewHolder;
@@ -72,15 +86,15 @@ public class RecycleAdapter  extends RecyclerView.Adapter<RecyclerView.ViewHolde
         Game game = (Game) content.get(position);
         if (game != null) {
             gamesViewHolder.teamOne.setText(game.getTeam_one());
-            gamesViewHolder.teamTwo.setText(game.getTime());
-            gamesViewHolder.timeText.setText(game.getTeam_two());
+            gamesViewHolder.teamTwo.setText(game.getTeam_two());
+            gamesViewHolder.timeText.setText(game.getTime());
         }
     }
 
 
     @Override
     public int getItemCount() {
-        return 0;
+        return content.size();
     }
 
     static class DatesViewHolder extends RecyclerView.ViewHolder {
