@@ -5,12 +5,13 @@
     android:id="@+id/game_row"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardBackgroundColor="#2a0e35">
+    app:cardBackgroundColor="#2A0E35">
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/constraint_tab"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/row_border">
 
         <TextView
             android:id="@+id/team_two_text"
@@ -31,13 +32,18 @@
             android:id="@+id/time_text"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
+            android:layout_marginBottom="1dp"
             android:layout_marginEnd="4dp"
             android:layout_marginStart="4dp"
+            android:layout_marginTop="1dp"
+            android:background="#48175b"
             android:gravity="center"
+            android:paddingEnd="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingStart="5dp"
             android:textColor="#fff"
             android:textSize="18sp"
-            android:background="#48175b"
-            android:padding="5dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -49,14 +55,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:contentDescription="@string/team_one_image"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/team_one"
-            android:layout_marginLeft="8dp" />
+            app:srcCompat="@drawable/team_one" />
 
         <TextView
             android:id="@+id/team_one_text"
@@ -80,14 +86,14 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
-            android:textColor="#fff"
+            android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
             android:contentDescription="@string/team_two_image"
+            android:textColor="#fff"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/team_two"
-            android:layout_marginRight="8dp" />
+            app:srcCompat="@drawable/team_two" />
     </android.support.constraint.ConstraintLayout>
 
 </android.support.v7.widget.CardView>
