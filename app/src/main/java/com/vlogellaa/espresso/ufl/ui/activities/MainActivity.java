@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setUpViews(){
-        constraintLayout.getBackground().setColorFilter(0xff0000ff, PorterDuff.Mode.DARKEN);
+        constraintLayout.getBackground().setColorFilter(0xFF211F3D, PorterDuff.Mode.DARKEN);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         BottomNavigationViewHelper.disableShiftMode(navigation);
     }

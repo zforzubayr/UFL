@@ -46,7 +46,7 @@
             </android.support.constraint.ConstraintLayout>
 
 
-            <!-- pin paralax it will scroll along with the scroll view-->
+            <!--app:tabSelectedTextColor="#a9afff"-->
 
 
         </android.support.design.widget.CollapsingToolbarLayout>

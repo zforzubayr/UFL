@@ -1,8 +1,5 @@
 <resources>
     <string name="app_name">UFL</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
     <string name="points_template">1320</string>
     <string name="contests">Contests</string>
     <string name="fixtures">Fixtures</string>
@@ -10,7 +7,6 @@
     <string name="gam">Gam</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="team_two_image">team two image</string>
     <string name="team_one_image">team one image</string>
 </resources>
