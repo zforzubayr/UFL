@@ -45,15 +45,15 @@ public class RecycleAdapter  extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
         switch (viewType) {
             case DATE:
-                View v1 = inflater.inflate(R.layout.day_row, parent, false);
+                View v1 = inflater.inflate(R.layout.row_date, parent, false);
                 viewHolder = new DatesViewHolder(v1);
                 break;
             case GAME:
-                View v2 = inflater.inflate(R.layout.game_row, parent, false);
+                View v2 = inflater.inflate(R.layout.row_game, parent, false);
                 viewHolder = new GamesViewHolder(v2);
                 break;
             default:
-                View v = inflater.inflate(R.layout.day_row, parent, false);
+                View v = inflater.inflate(R.layout.row_date, parent, false);
                 viewHolder = new DatesViewHolder(v);
                 break;
         }
