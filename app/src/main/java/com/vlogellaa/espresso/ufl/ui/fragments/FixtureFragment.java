@@ -1,6 +1,5 @@
 package com.vlogellaa.espresso.ufl.ui.fragments;
 
-
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -27,8 +26,7 @@ public class FixtureFragment extends Fragment {
 
     private JSONParser parser;
 
-    public FixtureFragment() {
-    }
+    public FixtureFragment() {}
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -41,12 +39,9 @@ public class FixtureFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_fixture, container, false);
         ButterKnife.bind(this, view);
-
         this.setTabLayout();
         this.listenersForTabLayout();
         this.setUpRecyclerView();
-
-
         return view;
     }
 
@@ -63,12 +58,10 @@ public class FixtureFragment extends Fragment {
         tabLayout.setTabGravity(TabLayout.MODE_FIXED);
     }
 
-
     private void setUpRecyclerView() {
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         changeData(0);
     }
-
 
     private void changeData(int type) {
         RecycleAdapter adapter = new RecycleAdapter(parser.getList(type));
@@ -104,14 +97,10 @@ public class FixtureFragment extends Fragment {
             }
 
             @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-
-            }
+            public void onTabUnselected(TabLayout.Tab tab) {}
 
             @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-
-            }
+            public void onTabReselected(TabLayout.Tab tab) {}
         });
     }
 
