@@ -3,7 +3,6 @@ package com.vlogellaa.espresso.ufl.util;
 
 import android.content.Context;
 import android.content.res.AssetManager;
-import android.util.Log;
 
 import com.vlogellaa.espresso.ufl.models.Dates;
 import com.vlogellaa.espresso.ufl.models.Game;
@@ -17,14 +16,13 @@ import java.io.InputStream;
 import java.util.ArrayList;
 
 public class JSONParser {
-    private static final String TAG = "JSONParser";
     private Context mContext;
 
     public JSONParser(Context mContext) {
         this.mContext = mContext;
     }
 
-    public String AssetJSONFile() {
+    private String AssetJSONFile() {
         String json;
         AssetManager manager = mContext.getAssets();
         try {
@@ -41,7 +39,7 @@ public class JSONParser {
         return json;
     }
 
-    private Game getGame(JSONObject jsonObject){
+    private Game getGame(JSONObject jsonObject) {
         try {
             return new Game(
                     jsonObject.getString("time"),
@@ -52,67 +50,63 @@ public class JSONParser {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        return  null;
+        return null;
     }
 
-    public ArrayList<Object> getList(final int filter){
+    private void filterGame(ArrayList<Object> list, JSONObject jsonObject, int filter) {
+        Game game = getGame(jsonObject);
+
+        if (filter == 0) {
+            list.add(game);
+        } else if (filter == 1) {
+            if ("Series A".matches(game.getLeague())) {
+                list.add(game);
+            }
+        } else if (filter == 2) {
+            if ("Premier League".matches(game.getLeague())) {
+                list.add(game);
+            }
+
+        } else if (filter == 3) {
+            if ("Ligui 1".matches(game.getLeague())) {
+                list.add(game);
+            }
+
+        } else if (filter == 4) {
+            if ("Saudi League".matches(game.getLeague())) {
+                list.add(game);
+            }
+        } else if (filter == 5) {
+            if ("La Liga".matches(game.getLeague())) {
+                list.add(game);
+            }
+        }
+
+    }
+
+    public ArrayList<Object> getList(int filter) {
 
         ArrayList<Object> list = new ArrayList<>();
 
-        try{
+        try {
             JSONArray jsonArray = new JSONArray(AssetJSONFile());
 
-            for(int i=0; i<jsonArray.length(); i++) {
+            for (int i = 0; i < jsonArray.length(); i++) {
                 JSONObject jsonObject = (JSONObject) jsonArray.get(i);
                 String type = jsonObject.getString("type");
 
-                if(type.matches("date")){
+                if (type.matches("date")) {
                     list.add(new Dates(jsonObject.getString("value")));
-                }
-                else if(type.matches("game")){
-
-                    Game game = getGame(jsonObject);
-
-                    if(filter == 0){
-                        list.add(game);
-                    }
-                    else if(filter == 1){
-                        if(game.getLeague().matches("Series A")){
-                            list.add(game);
-                        }
-                    }
-                    else if(filter == 2){
-                        if(game.getLeague().matches("Premier League")){
-                            list.add(game);
-                        }
-
-                    }
-                    else if(filter == 3){
-                        if(game.getLeague().matches("Ligui 1")){
-                            list.add(game);
-                        }
-
-                    }
-                    else if(filter == 4){
-                        if(game.getLeague().matches("Saudi League")){
-                            list.add(game);
-                        }
-                    }
-                    else if(filter == 5){
-                        if(game.getLeague().matches("La Liga")){
-                            list.add(game);
-                        }
-                    }
-
+                } else if (type.matches("game")) {
+                    filterGame(list, jsonObject, filter);
                 }
 
             }
 
-        }
-        catch (JSONException e) {
+        } catch (JSONException e) {
             e.printStackTrace();
         }
-        
+
         return list;
     }
 }
