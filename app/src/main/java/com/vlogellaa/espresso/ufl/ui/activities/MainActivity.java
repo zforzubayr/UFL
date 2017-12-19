@@ -76,12 +76,11 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationViewHelper.disableShiftMode(navigation);
     }
 
-    public boolean replaceCurrentFragmentWith() {
+    public void replaceCurrentFragmentWith() {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.frame_layout, new FixtureFragment());
         transaction.addToBackStack(null);
         transaction.commit();
-        return true;
     }
 
 
