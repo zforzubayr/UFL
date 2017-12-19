@@ -2,5 +2,11 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#B1B6FF</color>
+    <color name="colorActiveText">#A9AFFF</color>
+    <color name="colorInActiveText">#EFF0FA</color>
+    <color name="colorRowBorder">#C9C7FF</color>
+    <color name="colorRowMain">#2A0E35</color>
+    <color name="colorTimeTextView">#48175B</color>
+    <color name="colorCenterNav">#5F2078</color>
 </resources>
