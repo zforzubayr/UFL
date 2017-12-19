@@ -1,4 +1,4 @@
-package com.vlogellaa.espresso.ufl.ui.fragments.bottom_nav;
+package com.vlogellaa.espresso.ufl.ui.fragments;
 
 
 import android.os.Bundle;

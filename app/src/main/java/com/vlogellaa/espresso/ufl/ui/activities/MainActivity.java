@@ -5,69 +5,79 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.BottomNavigationView;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.MenuItem;
-import android.widget.TextView;
+import android.widget.FrameLayout;
 
 import com.vlogellaa.espresso.ufl.R;
-import com.vlogellaa.espresso.ufl.models.Dates;
-import com.vlogellaa.espresso.ufl.ui.fragments.bottom_nav.FixtureFragment;
+import com.vlogellaa.espresso.ufl.ui.fragments.FixtureFragment;
 import com.vlogellaa.espresso.ufl.util.BottomNavigationViewHelper;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Locale;
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
+    @BindView(R.id.container)
     ConstraintLayout constraintLayout;
 
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-            = new BottomNavigationView.OnNavigationItemSelectedListener() {
+    @BindView(R.id.frame_layout)
+    FrameLayout frameLayout;
 
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            switch (item.getItemId()) {
-                case R.id.points:
-                    return true;
-                case R.id.contests:
-                    return true;
-                case R.id.fixtures:
-                    replaceCurrentFragmentWith();
-                    return true;
+    @BindView(R.id.navigation)
+    BottomNavigationView navigation;
 
-                case R.id.profile:
-                    return true;
-
-                case R.id.gam:
-                    return true;
-
-            }
-            return false;
-        }
-    };
+    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        constraintLayout = findViewById(R.id.container);
-        constraintLayout.getBackground().setColorFilter(0xff0000ff, PorterDuff.Mode.DARKEN );
-        BottomNavigationView navigation = findViewById(R.id.navigation);
+        ButterKnife.bind(this);
+        this.setUpNavigationListener();
+        this.setUpViews();
+    }
+
+    private void setUpNavigationListener(){
+        mOnNavigationItemSelectedListener
+                = new BottomNavigationView.OnNavigationItemSelectedListener() {
+
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.points:
+                        frameLayout.removeAllViews();
+                        return true;
+                    case R.id.contests:
+                        frameLayout.removeAllViews();
+                        return true;
+                    case R.id.fixtures:
+                        replaceCurrentFragmentWith();
+                        return true;
+
+                    case R.id.profile:
+                        frameLayout.removeAllViews();
+                        return true;
+
+                    case R.id.gam:
+                        frameLayout.removeAllViews();
+                        return true;
+
+                }
+                return false;
+            }
+        };
+    }
+
+    private void setUpViews(){
+        constraintLayout.getBackground().setColorFilter(0xff0000ff, PorterDuff.Mode.DARKEN);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         BottomNavigationViewHelper.disableShiftMode(navigation);
     }
 
-
     public boolean replaceCurrentFragmentWith() {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        //animation here
         transaction.replace(R.id.frame_layout, new FixtureFragment());
         transaction.addToBackStack(null);
         transaction.commit();

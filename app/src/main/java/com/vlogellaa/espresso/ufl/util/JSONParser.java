@@ -95,9 +95,9 @@ public class JSONParser {
                 JSONObject jsonObject = (JSONObject) jsonArray.get(i);
                 String type = jsonObject.getString("type");
 
-                if (type.matches("date")) {
+                if ("date".matches(type)) {
                     list.add(new Dates(jsonObject.getString("value")));
-                } else if (type.matches("game")) {
+                } else if ("game".matches(type)) {
                     filterGame(list, jsonObject, filter);
                 }
 
