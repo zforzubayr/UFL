@@ -1,4 +1,6 @@
 <resources>
+
+    <!--bottom nav-->
     <string name="app_name">UFL</string>
     <string name="points_template">1320</string>
     <string name="contests">Contests</string>
@@ -6,7 +8,13 @@
     <string name="profile">Profile</string>
     <string name="gam">Gam</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
+    <!--tab layout-->
     <string name="team_two_image">team two image</string>
     <string name="team_one_image">team one image</string>
+    <string name="all_leagues">All Leagues</string>
+    <string name="serie_a">Serie A</string>
+    <string name="premiere_league">Premiere League</string>
+    <string name="ligue_1">Ligue 1</string>
+    <string name="saudi_arabia">Saudi League</string>
+    <string name="la_liga">La Liga</string>
 </resources>

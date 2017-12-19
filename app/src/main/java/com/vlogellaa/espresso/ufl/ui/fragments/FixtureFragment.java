@@ -11,7 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.vlogellaa.espresso.ufl.R;
-import com.vlogellaa.espresso.ufl.ui.fragments.RecycleAdapter;
 import com.vlogellaa.espresso.ufl.util.JSONParser;
 
 import butterknife.BindView;
@@ -55,12 +54,12 @@ public class FixtureFragment extends Fragment {
         tabLayout.setSmoothScrollingEnabled(true);
         tabLayout.setScrollPosition(3, 0f, true);
 
-        tabLayout.addTab(tabLayout.newTab().setText("All Leagues").setIcon(R.drawable.silver_icon));
-        tabLayout.addTab(tabLayout.newTab().setText("Series A").setIcon(R.drawable.italy_badge));
-        tabLayout.addTab(tabLayout.newTab().setText("Premiere League").setIcon(R.drawable.england));
-        tabLayout.addTab(tabLayout.newTab().setText("League 1").setIcon(R.drawable.italy_badge));
-        tabLayout.addTab(tabLayout.newTab().setText("Saudi League").setIcon(R.drawable.saudi_contest));
-        tabLayout.addTab(tabLayout.newTab().setText("La Liga").setIcon(R.drawable.spain_contest));
+        tabLayout.addTab(tabLayout.newTab().setText(R.string.all_leagues).setIcon(R.drawable.silver_icon));
+        tabLayout.addTab(tabLayout.newTab().setText(R.string.serie_a).setIcon(R.drawable.italy_badge));
+        tabLayout.addTab(tabLayout.newTab().setText(R.string.premiere_league).setIcon(R.drawable.england));
+        tabLayout.addTab(tabLayout.newTab().setText(R.string.ligue_1).setIcon(R.drawable.italy_badge));
+        tabLayout.addTab(tabLayout.newTab().setText(R.string.saudi_arabia).setIcon(R.drawable.saudi_contest));
+        tabLayout.addTab(tabLayout.newTab().setText(R.string.la_liga).setIcon(R.drawable.spain_contest));
         tabLayout.setTabGravity(TabLayout.MODE_FIXED);
     }
 
